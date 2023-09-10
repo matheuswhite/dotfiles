@@ -1,0 +1,5 @@
+inherits = "everforest_dark"
+
+"ui.statusline.normal" = { fg = "#ffffff", bg = "blue" }
+"ui.statusline.insert" = { fg = "#ffffff", bg = "green" }
+"ui.statusline.select" = { fg = "#ffffff", bg = "magenta" }
