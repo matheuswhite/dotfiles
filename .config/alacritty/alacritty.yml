@@ -1,13 +1,13 @@
 font:
   size: 8.0
   normal:
-    family: CaskaydiaCove Nerd Font Mono
+    family: CaskaydiaMono Nerd Font
     style: Regular
   bold:
-    family: CaskaydiaCove Nerd Font Mono
+    family: CaskaydiaMono Nerd Font
     style: Bold
   italic:
-    family: CaskaydiaCove Nerd Font Mono
+    family: CaskaydiaMono Nerd Font
     style: Italic
 shell:
   program: /bin/zsh

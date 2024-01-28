@@ -1,0 +1,19 @@
+import = ["/home/matheuswhite/.config/alacritty/themes/themes/everforest.yaml"]
+
+[font]
+size = 8.0
+
+[font.bold]
+family = "CaskaydiaMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaMono Nerd Font"
+style = "Regular"
+
+[shell]
+program = "/bin/zsh"
