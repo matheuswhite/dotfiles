@@ -53,7 +53,7 @@ bspc rule -a Screenkey manage=off
 
 source $HOME/.fehbg
 source $HOME/.config/polybar/launch.sh &
-exec /usr/bin/dunst &
+killall dunst && exec /usr/bin/dunst &
 
 if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
 	# set xrandr rules for docked setup

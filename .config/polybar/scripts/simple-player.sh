@@ -16,11 +16,9 @@ if [ ${#title} -gt $max_title_len ]; then
 fi
 
 if [[ "$player_status" = "Playing" ]]; then
-    echo "playing"
-    echo " $artist | $title"
+    echo "$artist | $title"
 elif [[ "$player_status" = "Paused" ]]; then
-    echo "paused"
-    echo " $artist | $title"
+    echo "Pausado"
 else 
-    echo " Sem música"
+    echo "Sem música"
 fi

@@ -17,7 +17,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = none
+    follow = keyboard
 
     ### Geometry ###
 
@@ -27,19 +27,19 @@
     width = 300
 
     # The maximum height of a single notification, excluding the frame.
-    height = 400
+    height = 950
 
     # Position the notification in the top right corner
     origin = top-right
 
     # Offset from the origin
-    offset = 10x50
+    offset = 10x45
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
 
     # Maximum number of notification (0 means no limit)
-    notification_limit = 20
+    notification_limit = 10
 
     ### Progress bar ###
 
@@ -64,7 +64,7 @@
     progress_bar_corner_radius = 0
 
     # Corner radius for the icon image.
-    icon_corner_radius = 0
+    icon_corner_radius = 5
 
     # Show how many messages are currently hidden (because of
     # notification_limit).
@@ -123,7 +123,7 @@
 
     ### Text ###
 
-    font = CaskaydiaCove Nerd Font Mono 10
+    font = CaskaydiaMono NF 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -163,7 +163,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
+    format = "[<b>%a</b>] <b>%s</b>\n%b\n"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -171,7 +171,7 @@
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
-    vertical_alignment = center
+    vertical_alignment = top
 
     # Show age of message if message is older than show_age_threshold
     # seconds.
@@ -180,7 +180,7 @@
 
     # Specify where to make an ellipsis in long lines.
     # Possible values are "start", "middle" and "end".
-    ellipsize = middle
+    ellipsize = end
 
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
@@ -214,7 +214,7 @@
     min_icon_size = 32
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 128
+    max_icon_size = 64
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
@@ -234,7 +234,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/xdg-open
+    browser = /usr/bin/brave
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -250,7 +250,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 9
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -313,15 +313,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#DCD8C0"
+    foreground = "#454138"
+    frame_color = "#454138"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
+    background = "#454138"
+    foreground = "#DCD8C0"
+    frame_color = "#DCD8C0"
+    highlight = "#DCD8C0"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
