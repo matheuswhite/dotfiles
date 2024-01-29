@@ -5,3 +5,6 @@
 .config/kwalletrc
 .config/pulse/*
 .config/spotify/*
+.config/Code/*
+.config/dconf/*
+.config/discord/*
