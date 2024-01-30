@@ -129,3 +129,6 @@ super + z
 
 super + x
 	betterlockscreen -l
+
+super + shift + s
+	spectacle -r -c -b
