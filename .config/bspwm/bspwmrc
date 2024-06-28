@@ -51,6 +51,7 @@ bspc config gapless_monocle      true
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+xbindkeys
 source $HOME/.fehbg
 source $HOME/.config/polybar/launch.sh &
 killall dunst && exec /usr/bin/dunst &

@@ -1,0 +1,29 @@
+(defwidget sudopass []
+           (box :orientation "vertical"
+                :valign "center"
+            "Icon Lock"
+            "Digite abaixo a senha para matheuswhite:"
+           (let [(password "")] 
+            (input :password true
+                   :onchange (set password "{}")
+                   :onaccept "notify-send 'Password' '{}'"
+            )
+            (button :onclick "" "Ok")
+            (button :onclick "" "Cancelar"))
+           )
+)
+
+(defwindow example
+           :monitor 0
+           :geometry (geometry :x "0%"
+                               :y "60px"
+                               :width "30%"
+                               :height "20%"
+                               :anchor "top center")
+           :stacking "fg"
+           :reserve (struts :distance "40px" :side "top")
+           :windowtype "dialog"
+           :wm-ignore false
+           :focusable "true"
+           :onkeypressed (keyevent :key "esc" :command "notify-send 'Pressed' 'ESC'")
+ (sudopass))

@@ -6,6 +6,10 @@
 super + Return
 	WINIT_X11_SCALE_FACTOR=1.5 alacritty -vv
 
+# floating terminal emulator
+super + shift + Return
+	bspc rule -a \* -o state=floating && WINIT_X11_SCALE_FACTOR=1.5 alacritty -vv
+
 # program launcher
 super + @space
 	~/.config/rofi/scripts/launcher_t4

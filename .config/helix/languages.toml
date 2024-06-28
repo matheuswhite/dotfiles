@@ -1,0 +1,19 @@
+[[language]]
+name = "c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["c", "h"]
+roots = ["compile_commands.json"]
+comment-token = "//"
+language-servers = [ "clangd" ]
+formatter = { command = "clang-format", args = ["--style=file:.clang_format"] }
+indent = { tab-width = 4, unit = " " }
+auto-format = true
+
+[[language]]
+name = "rust"
+language-servers = [ "rust-analyzer" ]
+
+[language-server.tailwindcss-language-server]
+config = { userLanguages = { rust = "html", "*.rs" = "html" } }
+command = "tailwindcss-language-server" 
