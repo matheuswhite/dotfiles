@@ -1,4 +1,4 @@
-import = ["/home/matheuswhite/.config/alacritty/themes/themes/everforest.yaml"]
+# import = ["/home/matheuswhite/.config/alacritty/themes/themes/one_dark.yaml"]
 
 [font]
 size = 8.0

@@ -75,3 +75,5 @@ else
 		monitor_remove
 	fi
 fi
+
+feh --bg-scale $HOME/images/snow.jpg

@@ -1,5 +1,8 @@
 inherits = "everforest_dark"
 
-"ui.statusline.normal" = { fg = "#ffffff", bg = "blue" }
-"ui.statusline.insert" = { fg = "#ffffff", bg = "green" }
-"ui.statusline.select" = { fg = "#ffffff", bg = "magenta" }
+"ui.statusline.normal" = { fg = "#303030", bg = "blue" }
+"ui.statusline.insert" = { fg = "#303030", bg = "yellow" }
+"ui.statusline.select" = { fg = "#303030", bg = "magenta" }
+"ui.cursor.primary.normal" = { modifiers = ["reversed"] }
+"ui.cursor.primary.insert" = { fg = "white", modifiers = ["reversed"] }
+"ui.cursor.primary.select" = { fg = "magenta", modifiers = ["reversed"] }
